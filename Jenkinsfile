@@ -1,11 +1,5 @@
 node{
 
-    environment 
-    {
-        PATH = "$PATH:/usr/local/bin"
-    }
-
-
     stage('SCM Checkout')
     {
         git credentialsId: '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', url: 'https://github.com/rushikeshtembhurne/online-shop.git'
