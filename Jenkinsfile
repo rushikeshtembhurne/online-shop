@@ -2,7 +2,7 @@ node{
 
     stage('SCM Checkout')
     {
-        git credentialsId: '4cc785e9-441d-4818-a248-2bfb2148004d', url: 'https://github.com/VardhanNS/phpmysql-app.git'
+        git credentialsId: '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', url: 'https://github.com/rushikeshtembhurne/online-shop.git'
     }
     
     stage('Run Docker Compose File')
@@ -20,10 +20,10 @@ node{
         */
         //docker.withRegistry( 'https://registry.hub.docker.com', 'DockerHubPassword' ) {
              
-             sh 'sudo docker login -u "upasanatestdocker" -p "Zephyr@17" docker.io'
+             sh 'sudo docker login -u "rishi0921" -p "Rishi@123" docker.io'
              //sh 'sudo docker push upasanatestdocker/mysql'
              //sh 'sudo docker push upasanatestdocker/job1_web1.0'
-             sh 'sudo docker push upasanatestdocker/job1_web2.0'
+             sh 'sudo docker push rishi0921/job1_web2.0'
             // sh 'docker push upasanatestdocker/mysql'
           
     }
